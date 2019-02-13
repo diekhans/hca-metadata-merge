@@ -1,0 +1,21 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/file/6.5.2/sequence_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "E18_20161004_Neurons_Sample_40_S039_L001_R2_005.fastq.gz",
+        "file_format": "fastq",
+        "checksum": "db2d70f5b235a5c2e1cf95cb88bf6e66"
+    },
+    "read_index": "read2",
+    "lane_index": 1,
+    "read_length": 114,
+    "insdc_run": [
+        "SRR5259450"
+    ],
+    "technical_replicate_group": "E18_20161004_Neurons_Sample_40",
+    "provenance": {
+        "document_id": "52d4cb08-cfc1-4ad1-8259-99516568ca23",
+        "submission_date": "2018-12-04T18:54:37.709Z",
+        "update_date": "2018-12-05T04:52:24.517Z"
+    }
+}

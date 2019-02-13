@@ -1,0 +1,12 @@
+{
+    "process_core": {
+        "process_id": "E18_20161004_Neurons_Sample_40_S039_L001_005"
+    },
+    "schema_type": "process",
+    "describedBy": "https://schema.humancellatlas.org/type/process/6.0.2/process",
+    "provenance": {
+        "document_id": "7f6ec185-3e5e-4567-bafd-ee4150599030",
+        "submission_date": "2018-12-04T18:59:34.781Z",
+        "update_date": "2018-12-04T19:12:00.240Z"
+    }
+}
