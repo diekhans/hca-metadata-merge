@@ -1,0 +1,213 @@
+{
+  "bundle": {
+    "creator_uid": 8008,
+    "files": [
+      {
+        "content-type": "application/json; dcp-type=\"metadata/biomaterial\"",
+        "crc32c": "c65d19b4",
+        "indexed": true,
+        "name": "cell_suspension_0.json",
+        "s3_etag": "09896085953dfa940dc2448eb1b5d007",
+        "sha1": "d03957a52a4d59674d67ae8c5efb6f0f3ae9dd38",
+        "sha256": "909c246ded97c9b6712940ef93bc60ea08ca39734ccf5475b04b3edccd663b02",
+        "size": 1356,
+        "uuid": "50467c07-863d-4076-957f-257170adbe35",
+        "version": "2018-12-04T190455.209000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/biomaterial\"",
+        "crc32c": "8d9dff95",
+        "indexed": true,
+        "name": "specimen_from_organism_0.json",
+        "s3_etag": "a97d8fc46948cbcae56d20957da4faf8",
+        "sha1": "cd8492ef5a3bda1a0b57f1cbb0789dd759d34fae",
+        "sha256": "c7f99e24b99d7773f590255798ba36c871ba4c28bb938ca98678bb2becd9e20f",
+        "size": 1644,
+        "uuid": "0f9e8ed0-9626-46e8-a27e-f6e89cb63c72",
+        "version": "2018-12-04T190119.260000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/biomaterial\"",
+        "crc32c": "a5cefe38",
+        "indexed": true,
+        "name": "donor_organism_0.json",
+        "s3_etag": "774158c90efe850fd284c6bbf840ea8a",
+        "sha1": "ddaec25fc4d3a8dd87f870e080e970468c6981c4",
+        "sha256": "3eb465020d655860bdc0da349224ef338a3ebfdf79d2420127e6f87b0222e3ee",
+        "size": 1430,
+        "uuid": "99d226d8-3b06-46f3-88c4-89b52c35172c",
+        "version": "2018-12-04T190115.577000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/file\"",
+        "crc32c": "1117adc7",
+        "indexed": true,
+        "name": "sequence_file_0.json",
+        "s3_etag": "c01fc1e8ee9da090ca39465d8fa2a7a4",
+        "sha1": "682a989150a377ed024cdc7c80b95244163cc8cc",
+        "sha256": "d8e8f488113d287c43040382053a8f409c85609999d1eb40545631278ac12570",
+        "size": 689,
+        "uuid": "368092bd-7517-4f02-8e15-ff320b914bf0",
+        "version": "2018-12-05T043304.930000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/file\"",
+        "crc32c": "6226f8f5",
+        "indexed": true,
+        "name": "sequence_file_1.json",
+        "s3_etag": "cd1db2063242b5d218cda1336e45c0b0",
+        "sha1": "53512864c31a3f75a518ca298b9a37f85085ab5f",
+        "sha256": "ddaeb77c81f4a822a9927643aa925dbd1245a4cc5041704a5e1d503b5e3279c0",
+        "size": 689,
+        "uuid": "b21089bb-27b9-4050-87b8-dc7a213c33cb",
+        "version": "2018-12-05T043333.839000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/file\"",
+        "crc32c": "b8bd5fad",
+        "indexed": true,
+        "name": "sequence_file_2.json",
+        "s3_etag": "a64857b8b32551e683e353cfc79ea84d",
+        "sha1": "3402ce5cab19ad86d55f5ebb0969b7be85e672a7",
+        "sha256": "f6849d1972befb186ca7bda81d6ad73cf4ac620bd212c6b90b8bf35ab7ec78d0",
+        "size": 690,
+        "uuid": "fdc71226-dcb1-419f-9849-ef2b390e4285",
+        "version": "2018-12-05T043725.991000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/project\"",
+        "crc32c": "5eea185b",
+        "indexed": true,
+        "name": "project_0.json",
+        "s3_etag": "d93721a1692d5fb7d7e801585579fdd3",
+        "sha1": "d0fc14b2d8b03d68fda31c461f153144e8e75d88",
+        "sha256": "a13238bc51ff1af094be6b4b614e5031eab5f82a042f823d5a3b2c031097b50d",
+        "size": 3960,
+        "uuid": "ff481f29-3d0b-4533-9de2-a760c61c162d",
+        "version": "2018-12-04T190115.532000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/protocol\"",
+        "crc32c": "3e5c2392",
+        "indexed": true,
+        "name": "library_preparation_protocol_0.json",
+        "s3_etag": "f31cb9587a304de0509a3d52a5efda1f",
+        "sha1": "8489d7c0a39c85369f3369a5a29c56a584b5dc53",
+        "sha256": "5e07f5a28c98683b8e51faeb374cc90497b2e67ffb5925d52e2d8e296abbf05a",
+        "size": 1187,
+        "uuid": "3c2d6162-f086-4cf4-bd01-fb46c1b04990",
+        "version": "2018-12-04T185829.682000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/protocol\"",
+        "crc32c": "99b74b2b",
+        "indexed": true,
+        "name": "sequencing_protocol_0.json",
+        "s3_etag": "990e7dd1050f4b6f64a6d5b2c14a75e3",
+        "sha1": "3525c0653b01264a3de7d10d4e62e2ada79b021d",
+        "sha256": "3eee8ee54e3a64966835f185bc142969a9dad5b77d644b310ef6480eb5bfe0b1",
+        "size": 979,
+        "uuid": "3decd8d5-5990-43cd-84cc-6c7796b8a76d",
+        "version": "2018-12-04T185830.949000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/protocol\"",
+        "crc32c": "2303a410",
+        "indexed": true,
+        "name": "dissociation_protocol_0.json",
+        "s3_etag": "4da303626caabce13339b189fd856c38",
+        "sha1": "9017ccbfe60811b95f891eaecdc853e5519529fe",
+        "sha256": "cd8564e7c1d525101fc569fcc7ad4e783711314f0b93bca11fac71a5c9c3ef9a",
+        "size": 1191,
+        "uuid": "516829d4-62b6-4053-b670-650b8b56c4e1",
+        "version": "2018-12-04T185830.979000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/process\"",
+        "crc32c": "3ae76d2e",
+        "indexed": true,
+        "name": "process_0.json",
+        "s3_etag": "4cd3507f2c56c6c3d9a08c70dbdbe4c9",
+        "sha1": "0225850fadfa451af95ae17d8238c678a7700e97",
+        "sha256": "38799073f92b060fe9e6fcffccdb2431c48bf4843c98cfcb7606474cfb6b86ce",
+        "size": 408,
+        "uuid": "2156e1e6-6d2e-40cd-82ce-e93c08b18832",
+        "version": "2018-12-04T191450.550000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/process\"",
+        "crc32c": "0daba1f8",
+        "indexed": true,
+        "name": "process_1.json",
+        "s3_etag": "2d3960732eb490527f1db1ed4bc9687a",
+        "sha1": "db094eacfa138015b1dddeca026cda66f662ed70",
+        "sha256": "6f8412c95ee372ca25e4f9fe971b14fa63faf25a020882f21308c715bb45b147",
+        "size": 378,
+        "uuid": "7c92eea8-27ba-4baf-9e57-34d4b24e5cf1",
+        "version": "2018-12-04T190855.868000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/process\"",
+        "crc32c": "c7bbefa0",
+        "indexed": true,
+        "name": "process_2.json",
+        "s3_etag": "305830543870ad76e680473c93d22d36",
+        "sha1": "6afc3a652afe301b1444109519af0cc455c0c7e3",
+        "sha256": "946b7288df5de853534043522dce2c04b7443285245fa34dbb51c14227de4e32",
+        "size": 376,
+        "uuid": "cfcdb13b-54ce-4227-9865-a1139ea058a2",
+        "version": "2018-12-04T190853.824000Z"
+      },
+      {
+        "content-type": "application/json; dcp-type=\"metadata/links\"",
+        "crc32c": "bde50000",
+        "indexed": true,
+        "name": "links.json",
+        "s3_etag": "7215d1596036c11c2faa5b9510041248",
+        "sha1": "60a8191f636115013c0fbfdc814e7f488645de17",
+        "sha256": "6516fb82e1f7b01761ac6383f4a293e8053b75cc263609e5c0d3543e55ed31ed",
+        "size": 1968,
+        "uuid": "9e6d5928-889e-4a57-9615-d987cecc7215",
+        "version": "2018-12-06T040818.487048Z"
+      },
+      {
+        "content-type": "application/gzip; dcp-type=data",
+        "crc32c": "ebf96fe8",
+        "indexed": false,
+        "name": "E18_20161004_Neurons_Sample_35_S035_L007_I1_009.fastq.gz",
+        "s3_etag": "92d8c10b41e6dd2fd9c2fb9788301e9f",
+        "sha1": "d7b0b0089098954cd917c5f5d9c2ac843e1a31d7",
+        "sha256": "2e49543eba755cafc73b7c86184c6d58cf9381dfc594227ed53d6332e6a23643",
+        "size": 27988533,
+        "uuid": "c204a05a-7804-4fed-80ae-c4316349de6f",
+        "version": "2018-12-06T040818.745296Z"
+      },
+      {
+        "content-type": "application/gzip; dcp-type=data",
+        "crc32c": "5a93f318",
+        "indexed": false,
+        "name": "E18_20161004_Neurons_Sample_35_S035_L007_R1_009.fastq.gz",
+        "s3_etag": "bdd9358403b9d3ff89a3908eb5f992b3",
+        "sha1": "6491089caa08a7ce32bdeae270bed25d1a2d4710",
+        "sha256": "ca2979a2eaee174990a664566fe02df1e56e1dc1c77c34bb4f2d00d117d361a8",
+        "size": 64300064,
+        "uuid": "abbb6fea-1917-4e4b-a235-90f4ee57b4c1",
+        "version": "2018-12-06T040819.791480Z"
+      },
+      {
+        "content-type": "application/gzip; dcp-type=data",
+        "crc32c": "d6fcdf22",
+        "indexed": false,
+        "name": "E18_20161004_Neurons_Sample_35_S035_L007_R2_009.fastq.gz",
+        "s3_etag": "db4457ab97436399ba53553474e12db4-5",
+        "sha1": "2bb8ee332e4f7df8effb4a45b82c7974c6bc9e6c",
+        "sha256": "eb09c52985c4dcb79a6136ed8713210a40b8e7e28c066a0f9230b6cbf439bddb",
+        "size": 285134783,
+        "uuid": "e9d5682c-c7ac-4b51-98a4-8cd0cea14dc1",
+        "version": "2018-12-06T040821.098979Z"
+      }
+    ],
+    "uuid": "fb25bbf8-6564-4340-af5e-b90772f9417f",
+    "version": "2018-12-06T040852.072554Z"
+  }
+}

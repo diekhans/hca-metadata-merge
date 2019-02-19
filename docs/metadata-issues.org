@@ -1,0 +1,16 @@
+* big issue:
+constructing versioned metadata graph is very tied to bundle, it is not construcable
+only using de-duplicated metadata entities.
+* bundle file is not downloads as part of metadata.
+* links.json doesn;t contains it's uuid an version
+* can't easily build graph.
+- graph is not contained in 
+* can't easly trace versions:
+- links.json doesn't have versions
+-
+* terminology is inconsistent:
+- md has document_id
+- bundle has uuid
+- links.json doesn't have province
+
+* metadata files are not clearly identifiable.

@@ -1,11 +1,11 @@
-metadata2tsv = ../bin/metadata2tsv
+metadata-merge = ../bin/metadata-merge
 
 all:
 
-test: 1m-neurons_tests
+test: 1m-neurons_test
 
-1m-neurons_tests: mkdirs
-	${metadata2tsv} input/1m-neurons/
+1m-neurons_test: mkdirs
+	${metadata-merge} input/1m-neurons output/$@.metadata.json
 
 mkdirs:
 	mkdir -p output

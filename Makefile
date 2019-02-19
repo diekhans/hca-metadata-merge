@@ -11,4 +11,4 @@ clean:
 
 
 lint:
-	python3 -m flake8 bin/metadata2tsv
+	python3 -m flake8 bin/metadata-merge

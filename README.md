@@ -1,2 +1,2 @@
-# hca-metadata-tsv
-Code to generate metadata TSV files for testing
+# hca-metadata-merge
+Prototype code to generate combined metadata JSON files.
