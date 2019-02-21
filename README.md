@@ -35,6 +35,11 @@ Writing this program  has lead to the discovery that, if there were multiple ver
 metadata entities in a project, it would be very difficult to build the various
 version graphs.
 
+## Examples
+Due to github size limits, the sample ```metaata.json``` files are under:
+
+<https://hgwdev.gi.ucsc.edu/~markd/hca/metadata-merge/>
+
 ## Issues
 - Entity fqids are not currently used everywhere in the code, this will report errors if there is a problem.
 - The links.json structure seems hard to impossible to use when multiple versions are supported
