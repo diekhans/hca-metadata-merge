@@ -1,0 +1,975 @@
+[
+    {
+        "contributors": [
+            {
+                "address": "Wellcome Trust Genome Campus, Cambridge UK",
+                "contact_name": "Sarah,A,Teichmann",
+                "country": "UK",
+                "email": "st9@sanger.ac.uk",
+                "institution": "Wellcome Trust Sanger Institute",
+                "laboratory": "Sarah Teichmann"
+            },
+            {
+                "address": "Wellcome Trust Genome Campus, Cambridge UK",
+                "contact_name": "Mirjana,,Efremova",
+                "country": "UK",
+                "email": "me5@sanger.ac.uk",
+                "institution": "Wellcome Trust Sanger Institute",
+                "laboratory": "Sarah Teichmann"
+            },
+            {
+                "address": "Wellcome Trust Genome Campus, Cambridge UK",
+                "contact_name": "Bidesh,,Mahata",
+                "country": "UK",
+                "email": "bm11@sanger.ac.uk",
+                "institution": "Wellcome Trust Sanger Institute",
+                "laboratory": "Sarah Teichmann"
+            },
+            {
+                "address": "Box 197, Cambridge Biomedical Campus, Cambridge, CB2 0XZ",
+                "contact_name": "Jacqueline,D,Shields",
+                "country": "UK",
+                "email": "JS970@MRCCU.cam.ac.uk",
+                "institution": "University of Cambridge",
+                "laboratory": "MRC Cancer Unit"
+            },
+            {
+                "address": "Box 197, Cambridge Biomedical Campus, Cambridge, CB2 0XZ",
+                "contact_name": "Sarah,,Davidson",
+                "country": "UK",
+                "email": "SED49@MRCCU.cam.ac.uk",
+                "institution": "University of Cambridge",
+                "laboratory": "MRC Cancer Unit"
+            },
+            {
+                "contact_name": "Angela,,Riedel",
+                "country": "Germany",
+                "email": "a.riedel@dkfz-heidelberg.de",
+                "institution": "DKFZ German Cancer Research Center"
+            },
+            {
+                "address": "Wellcome Trust Genome Campus, Cambridge UK",
+                "contact_name": "Roser,,Vento-Tormo",
+                "country": "UK",
+                "email": "rv4@sanger.ac.uk",
+                "institution": "Wellcome Trust Sanger Institute",
+                "laboratory": "Sarah Teichmann"
+            },
+            {
+                "address": "Wellcome Trust Genome Campus, Cambridge UK",
+                "contact_name": "Jhuma,,Pramanik",
+                "country": "UK",
+                "email": "jp19@sanger.ac.uk",
+                "institution": "Wellcome Trust Sanger Institute",
+                "laboratory": "Sarah Teichmann"
+            },
+            {
+                "address": "Wellcome Trust Genome Campus, Cambridge UK",
+                "contact_name": "Gozde,,Kar",
+                "country": "UK",
+                "email": "gkar@ebi.ac.uk",
+                "institution": "EMBL-EBI",
+                "laboratory": "Sarah Teichmann"
+            },
+            {
+                "contact_name": "Jani,,Huuhtanen",
+                "country": "Finland",
+                "email": "jani.huuhtanen@helsinki.fi",
+                "institution": "University of Helsinki"
+            },
+            {
+                "address": "Wellcome Trust Genome Campus, Cambridge UK",
+                "contact_name": "Mallory,Ann,Freeberg",
+                "corresponding_contributor": false,
+                "country": "UK",
+                "email": "mfreeberg@ebi.ac.uk",
+                "institution": "EMBL-EBI",
+                "laboratory": "Human Cell Atlas Data Coordination Platform",
+                "orcid_id": "0000-0003-2949-3921",
+                "project_role": "Human Cell Atlas wrangler"
+            },
+            {
+                "address": "Wellcome Trust Genome Campus, Cambridge",
+                "contact_name": "Danielle,,Welter",
+                "corresponding_contributor": false,
+                "country": "UK",
+                "email": "dwelter@ebi.ac.uk",
+                "institution": "EMBL-EBI",
+                "laboratory": "Human Cell Atlas Data Coordination Platform",
+                "orcid_id": "0000-0003-1058-2668",
+                "project_role": "Human Cell Atlas wrangler"
+            }
+        ],
+        "describedBy": "https://schema.humancellatlas.org/type/project/9.0.3/project",
+        "project_core": {
+            "project_description": "The cancer microenvironment is a complex ecosystem characterized by dynamic interactions between diverse cell types, including malignant, immune and stromal cells. Here, we performed single-cell RNA sequencing on CD45+ and CD45- cells isolated from tumour and lymph nodes during a mouse model of melanoma. The transcriptional profiles of these individual cells taken at different time points coupled with assembled T cell receptor sequences, allowed us to identify distinct immune subpopulations and delineate their developmental trajectory. Our study provides insights into the complex interplay among cells within the tumour microenvironment and presents a valuable resource for future translational applications.",
+            "project_short_name": "Mouse Melanoma",
+            "project_title": "Melanoma infiltration of stromal and immune cells"
+        },
+        "provenance": {
+            "document_fqid": "f396fa53-2a2d-4b8a-ad18-03bf4bd46833.2018-11-06T163447.951000Z",
+            "document_id": "f396fa53-2a2d-4b8a-ad18-03bf4bd46833",
+            "document_version": "2018-11-06T163447.951000Z",
+            "submission_date": "2018-11-06T16:18:53.284Z",
+            "update_date": "2018-11-06T16:34:47.951Z"
+        },
+        "schema_type": "project"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/process/6.0.2/process",
+        "process_core": {
+            "process_id": "proc_22467_7#379"
+        },
+        "provenance": {
+            "document_fqid": "e102ffef-03ab-42ca-a3e4-505706f4393a.2018-11-06T165253.206000Z",
+            "document_id": "e102ffef-03ab-42ca-a3e4-505706f4393a",
+            "document_version": "2018-11-06T165253.206000Z",
+            "inputs": [
+                "3a34e6bd-e534-422a-b087-a22a768c1618.2018-11-06T164547.863000Z"
+            ],
+            "protocols": [
+                "a2d7bd71-df3e-4a67-a671-b965c061bb8b.2018-11-06T162658.929000Z",
+                "c2bd27da-d132-4833-a5f7-a7b19aabc6a0.2018-11-06T162658.116000Z"
+            ],
+            "submission_date": "2018-11-06T16:30:20.514Z",
+            "update_date": "2018-11-06T16:52:53.206Z"
+        },
+        "schema_type": "process"
+    },
+    {
+        "biomaterial_core": {
+            "biomaterial_id": "22467_7#379",
+            "ncbi_taxon_id": [
+                10090
+            ]
+        },
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/8.6.1/cell_suspension",
+        "genus_species": [
+            {
+                "ontology": "NCBITaxon:10090",
+                "ontology_label": "Mus musculus",
+                "text": "Mus musculus"
+            }
+        ],
+        "plate_based_sequencing": {
+            "plate_id": "568",
+            "well_id": "D91"
+        },
+        "provenance": {
+            "document_fqid": "3a34e6bd-e534-422a-b087-a22a768c1618.2018-11-06T164547.863000Z",
+            "document_id": "3a34e6bd-e534-422a-b087-a22a768c1618",
+            "document_version": "2018-11-06T164547.863000Z",
+            "inputs": [
+                "c661cac2-52e1-4a8a-889b-23fa20bb9bb4.2018-11-06T165637.151000Z"
+            ],
+            "submission_date": "2018-11-06T16:26:33.090Z",
+            "update_date": "2018-11-06T16:45:47.863Z"
+        },
+        "schema_type": "biomaterial",
+        "selected_cell_type": [
+            {
+                "ontology": "CL:0001065",
+                "ontology_label": "innate lymphoid cell",
+                "text": "ILCs"
+            }
+        ],
+        "total_estimated_cells": 1
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/file/6.5.2/sequence_file",
+        "file_core": {
+            "file_format": "fastq.gz",
+            "file_name": "22467_7#379_1.fastq.gz"
+        },
+        "lane_index": 7,
+        "provenance": {
+            "document_fqid": "156290a3-8ef4-4641-a806-88a82c692ee6.2018-11-06T190334.002000Z",
+            "document_id": "156290a3-8ef4-4641-a806-88a82c692ee6",
+            "document_version": "2018-11-06T190334.002000Z",
+            "inputs": [
+                "e102ffef-03ab-42ca-a3e4-505706f4393a.2018-11-06T165253.206000Z"
+            ],
+            "submission_date": "2018-11-06T16:23:20.300Z",
+            "update_date": "2018-11-06T19:03:34.002Z"
+        },
+        "read_index": "read1",
+        "schema_type": "file"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/file/6.5.2/sequence_file",
+        "file_core": {
+            "file_format": "fastq.gz",
+            "file_name": "22467_7#379_2.fastq.gz"
+        },
+        "lane_index": 7,
+        "provenance": {
+            "document_fqid": "5994a401-6f59-47ed-aacc-e7ea97d17f3e.2018-11-06T170638.826000Z",
+            "document_id": "5994a401-6f59-47ed-aacc-e7ea97d17f3e",
+            "document_version": "2018-11-06T170638.826000Z",
+            "inputs": [
+                "e102ffef-03ab-42ca-a3e4-505706f4393a.2018-11-06T165253.206000Z"
+            ],
+            "submission_date": "2018-11-06T16:23:20.308Z",
+            "update_date": "2018-11-06T17:06:38.826Z"
+        },
+        "read_index": "read2",
+        "schema_type": "file"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/protocol/sequencing/4.3.3/library_preparation_protocol",
+        "end_bias": "full length",
+        "input_nucleic_acid_molecule": {
+            "ontology": "OBI:0000869",
+            "ontology_label": "polyA RNA",
+            "text": "polyA RNA"
+        },
+        "library_construction_approach": {
+            "ontology": "EFO:0008931",
+            "ontology_label": "Smart-seq2",
+            "text": "Smart-seq2"
+        },
+        "nucleic_acid_source": "single cell",
+        "primer": "poly-dT",
+        "protocol_core": {
+            "document": "SmartSeq2_RTPCR_protocol.pdf",
+            "protocol_id": "SmartSeq2_RTPCR_protocol",
+            "protocol_name": "Make/amplify cDNA for each cell"
+        },
+        "provenance": {
+            "document_fqid": "a2d7bd71-df3e-4a67-a671-b965c061bb8b.2018-11-06T162658.929000Z",
+            "document_id": "a2d7bd71-df3e-4a67-a671-b965c061bb8b",
+            "document_version": "2018-11-06T162658.929000Z",
+            "submission_date": "2018-11-06T16:26:47.359Z",
+            "update_date": "2018-11-06T16:26:58.929Z"
+        },
+        "schema_type": "protocol",
+        "strand": "unstranded",
+        "umi_barcode": {
+            "barcode_length": 16,
+            "barcode_offset": 0,
+            "barcode_read": "Read 1"
+        }
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/protocol/sequencing/9.0.3/sequencing_protocol",
+        "instrument_manufacturer_model": {
+            "ontology": "EFO:0008567",
+            "ontology_label": "Illumina HiSeq 2500",
+            "text": "Illumina HiSeq 2500"
+        },
+        "paired_end": true,
+        "protocol_core": {
+            "document": "SmartSeq2_sequencing_protocol.pdf",
+            "protocol_id": "SmartSeq2_sequencing_protocol",
+            "protocol_name": "Sequencing SmartSeq2 cells"
+        },
+        "provenance": {
+            "document_fqid": "c2bd27da-d132-4833-a5f7-a7b19aabc6a0.2018-11-06T162658.116000Z",
+            "document_id": "c2bd27da-d132-4833-a5f7-a7b19aabc6a0",
+            "document_version": "2018-11-06T162658.116000Z",
+            "submission_date": "2018-11-06T16:26:47.366Z",
+            "update_date": "2018-11-06T16:26:58.116Z"
+        },
+        "schema_type": "protocol",
+        "sequencing_approach": {
+            "ontology": "EFO:0008931",
+            "ontology_label": "Smart-seq2",
+            "text": "Smart-seq2"
+        }
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/process/6.0.2/process",
+        "process_core": {
+            "process_id": "process_id_6260"
+        },
+        "provenance": {
+            "document_fqid": "c661cac2-52e1-4a8a-889b-23fa20bb9bb4.2018-11-06T165637.151000Z",
+            "document_id": "c661cac2-52e1-4a8a-889b-23fa20bb9bb4",
+            "document_version": "2018-11-06T165637.151000Z",
+            "inputs": [
+                "41bed7a7-0bb8-492c-ba0e-efea3b89118d.2018-11-06T163906.545000Z"
+            ],
+            "protocols": [
+                "2cd47ea5-74c1-401d-86d5-70f90255c9be.2018-11-06T162657.790000Z",
+                "32ba49cf-3950-4e3c-841a-181d47e3802e.2018-11-06T162657.632000Z"
+            ],
+            "submission_date": "2018-11-06T16:34:29.660Z",
+            "update_date": "2018-11-06T16:56:37.151Z"
+        },
+        "schema_type": "process"
+    },
+    {
+        "biomaterial_core": {
+            "biomaterial_id": "1134_T",
+            "biomaterial_name": "Mouse_day11_T_rep1",
+            "ncbi_taxon_id": [
+                10090
+            ]
+        },
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/6.3.3/specimen_from_organism",
+        "genus_species": [
+            {
+                "ontology": "NCBITaxon:10090",
+                "ontology_label": "Mus musculus",
+                "text": "Mus musculus"
+            }
+        ],
+        "organ": {
+            "text": "tumor"
+        },
+        "provenance": {
+            "document_fqid": "41bed7a7-0bb8-492c-ba0e-efea3b89118d.2018-11-06T163906.545000Z",
+            "document_id": "41bed7a7-0bb8-492c-ba0e-efea3b89118d",
+            "document_version": "2018-11-06T163906.545000Z",
+            "inputs": [
+                "d47656bd-4838-4b1a-8f71-0541a38cf4d0.2018-11-06T165320.398000Z"
+            ],
+            "submission_date": "2018-11-06T16:23:41.111Z",
+            "update_date": "2018-11-06T16:39:06.545Z"
+        },
+        "schema_type": "biomaterial"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/5.0.3/dissociation_protocol",
+        "dissociation_method": {
+            "ontology": "EFO:0009129",
+            "ontology_label": "mechanical dissociation",
+            "text": "mechanical dissociation"
+        },
+        "protocol_core": {
+            "document": "TissueDissociationProtocol.pdf",
+            "protocol_id": "tissue_dissociation_protocol",
+            "protocol_name": "Extracting cells from lymph nodes"
+        },
+        "provenance": {
+            "document_fqid": "32ba49cf-3950-4e3c-841a-181d47e3802e.2018-11-06T162657.632000Z",
+            "document_id": "32ba49cf-3950-4e3c-841a-181d47e3802e",
+            "document_version": "2018-11-06T162657.632000Z",
+            "submission_date": "2018-11-06T16:26:47.268Z",
+            "update_date": "2018-11-06T16:26:57.632Z"
+        },
+        "schema_type": "protocol"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.2.5/enrichment_protocol",
+        "enrichment_method": {
+            "ontology": "EFO:0009108",
+            "ontology_label": "fluorescence-activated cell sorting",
+            "text": "fluorescence-activated cell sorting"
+        },
+        "markers": "CD45+ IL7Ra+",
+        "protocol_core": {
+            "protocol_id": "FACS7",
+            "protocol_name": "FACS sorting cells by surface markers"
+        },
+        "provenance": {
+            "document_fqid": "2cd47ea5-74c1-401d-86d5-70f90255c9be.2018-11-06T162657.790000Z",
+            "document_id": "2cd47ea5-74c1-401d-86d5-70f90255c9be",
+            "document_version": "2018-11-06T162657.790000Z",
+            "submission_date": "2018-11-06T16:26:47.322Z",
+            "update_date": "2018-11-06T16:26:57.790Z"
+        },
+        "schema_type": "protocol"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/process/6.0.2/process",
+        "process_core": {
+            "process_id": "process_id_31"
+        },
+        "provenance": {
+            "document_fqid": "d47656bd-4838-4b1a-8f71-0541a38cf4d0.2018-11-06T165320.398000Z",
+            "document_id": "d47656bd-4838-4b1a-8f71-0541a38cf4d0",
+            "document_version": "2018-11-06T165320.398000Z",
+            "inputs": [
+                "9616c57c-054d-451e-9a6a-61a9179d201d.2018-11-06T163727.045000Z"
+            ],
+            "protocols": [],
+            "submission_date": "2018-11-06T16:30:43.540Z",
+            "update_date": "2018-11-06T16:53:20.398Z"
+        },
+        "schema_type": "process"
+    },
+    {
+        "biomaterial_core": {
+            "biomaterial_id": "1134",
+            "biomaterial_name": "Mouse_day11_rep1",
+            "ncbi_taxon_id": [
+                10090
+            ]
+        },
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/10.1.2/donor_organism",
+        "diseases": [
+            {
+                "ontology": "MONDO:0005105",
+                "ontology_label": "melanoma (disease)",
+                "text": "subcutaneous melanoma"
+            }
+        ],
+        "genus_species": [
+            {
+                "ontology": "NCBITaxon:10090",
+                "ontology_label": "Mus musculus",
+                "text": "Mus musculus"
+            }
+        ],
+        "is_living": "no",
+        "mouse_specific": {
+            "strain": [
+                {
+                    "ontology": "EFO:0004472",
+                    "ontology_label": "C57BL/6",
+                    "text": "C57BL/6"
+                }
+            ]
+        },
+        "organism_age": "6-12",
+        "organism_age_unit": {
+            "ontology": "UO:0000034",
+            "ontology_label": "week",
+            "text": "week"
+        },
+        "provenance": {
+            "document_fqid": "9616c57c-054d-451e-9a6a-61a9179d201d.2018-11-06T163727.045000Z",
+            "document_id": "9616c57c-054d-451e-9a6a-61a9179d201d",
+            "document_version": "2018-11-06T163727.045000Z",
+            "inputs": [],
+            "submission_date": "2018-11-06T16:23:40.141Z",
+            "update_date": "2018-11-06T16:37:27.045Z"
+        },
+        "schema_type": "biomaterial",
+        "sex": "female"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/process/6.0.2/process",
+        "process_core": {
+            "process_id": "proc_21935_5#311"
+        },
+        "provenance": {
+            "document_fqid": "77bd6b9f-d15b-4e25-bc05-417a98416b64.2018-11-06T164645.047000Z",
+            "document_id": "77bd6b9f-d15b-4e25-bc05-417a98416b64",
+            "document_version": "2018-11-06T164645.047000Z",
+            "inputs": [
+                "94ae9c32-8461-4f70-be21-08f8ca3652c2.2018-11-06T164127.554000Z"
+            ],
+            "protocols": [
+                "a2d7bd71-df3e-4a67-a671-b965c061bb8b.2018-11-06T162658.929000Z",
+                "c2bd27da-d132-4833-a5f7-a7b19aabc6a0.2018-11-06T162658.116000Z"
+            ],
+            "submission_date": "2018-11-06T16:27:05.928Z",
+            "update_date": "2018-11-06T16:46:45.047Z"
+        },
+        "schema_type": "process"
+    },
+    {
+        "biomaterial_core": {
+            "biomaterial_id": "21935_5#311",
+            "ncbi_taxon_id": [
+                10090
+            ]
+        },
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/8.6.1/cell_suspension",
+        "genus_species": [
+            {
+                "ontology": "NCBITaxon:10090",
+                "ontology_label": "Mus musculus",
+                "text": "Mus musculus"
+            }
+        ],
+        "plate_based_sequencing": {
+            "plate_id": "577",
+            "well_id": "G12"
+        },
+        "provenance": {
+            "document_fqid": "94ae9c32-8461-4f70-be21-08f8ca3652c2.2018-11-06T164127.554000Z",
+            "document_id": "94ae9c32-8461-4f70-be21-08f8ca3652c2",
+            "document_version": "2018-11-06T164127.554000Z",
+            "inputs": [
+                "419a44bd-dc5c-4ec6-a5ef-a3e79292bfe3.2018-11-06T165338.686000Z"
+            ],
+            "submission_date": "2018-11-06T16:23:56.886Z",
+            "update_date": "2018-11-06T16:41:27.554Z"
+        },
+        "schema_type": "biomaterial",
+        "selected_cell_type": [
+            {
+                "text": "CD11b+CD11c+DC"
+            }
+        ],
+        "total_estimated_cells": 1
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/file/6.5.2/sequence_file",
+        "file_core": {
+            "file_format": "fastq.gz",
+            "file_name": "21935_5#311_1.fastq.gz"
+        },
+        "lane_index": 5,
+        "provenance": {
+            "document_fqid": "38fd6363-7023-41cc-846e-4101c1312571.2018-11-06T173641.839000Z",
+            "document_id": "38fd6363-7023-41cc-846e-4101c1312571",
+            "document_version": "2018-11-06T173641.839000Z",
+            "inputs": [
+                "77bd6b9f-d15b-4e25-bc05-417a98416b64.2018-11-06T164645.047000Z"
+            ],
+            "submission_date": "2018-11-06T16:19:14.468Z",
+            "update_date": "2018-11-06T17:36:41.839Z"
+        },
+        "read_index": "read1",
+        "schema_type": "file"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/file/6.5.2/sequence_file",
+        "file_core": {
+            "file_format": "fastq.gz",
+            "file_name": "21935_5#311_2.fastq.gz"
+        },
+        "lane_index": 5,
+        "provenance": {
+            "document_fqid": "d23a1f3f-6875-40c0-8d95-5f65c3df787d.2018-11-06T173627.799000Z",
+            "document_id": "d23a1f3f-6875-40c0-8d95-5f65c3df787d",
+            "document_version": "2018-11-06T173627.799000Z",
+            "inputs": [
+                "77bd6b9f-d15b-4e25-bc05-417a98416b64.2018-11-06T164645.047000Z"
+            ],
+            "submission_date": "2018-11-06T16:19:14.475Z",
+            "update_date": "2018-11-06T17:36:27.799Z"
+        },
+        "read_index": "read2",
+        "schema_type": "file"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/process/6.0.2/process",
+        "process_core": {
+            "process_id": "process_id_651"
+        },
+        "provenance": {
+            "document_fqid": "419a44bd-dc5c-4ec6-a5ef-a3e79292bfe3.2018-11-06T165338.686000Z",
+            "document_id": "419a44bd-dc5c-4ec6-a5ef-a3e79292bfe3",
+            "document_version": "2018-11-06T165338.686000Z",
+            "inputs": [
+                "e08e63d2-8646-4beb-8f46-7dc0d3958196.2018-11-06T163909.005000Z"
+            ],
+            "protocols": [
+                "32ba49cf-3950-4e3c-841a-181d47e3802e.2018-11-06T162657.632000Z",
+                "fb9b03eb-4a81-4f78-82d0-2eb4a208bdf5.2018-11-06T162657.668000Z"
+            ],
+            "submission_date": "2018-11-06T16:31:01.546Z",
+            "update_date": "2018-11-06T16:53:38.686Z"
+        },
+        "schema_type": "process"
+    },
+    {
+        "biomaterial_core": {
+            "biomaterial_id": "1135_LN",
+            "biomaterial_name": "Mouse_day11_LN_rep2",
+            "ncbi_taxon_id": [
+                10090
+            ]
+        },
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/6.3.3/specimen_from_organism",
+        "genus_species": [
+            {
+                "ontology": "NCBITaxon:10090",
+                "ontology_label": "Mus musculus",
+                "text": "Mus musculus"
+            }
+        ],
+        "organ": {
+            "ontology": "UBERON:0000029",
+            "ontology_label": "lymph node",
+            "text": "lymph node"
+        },
+        "provenance": {
+            "document_fqid": "e08e63d2-8646-4beb-8f46-7dc0d3958196.2018-11-06T163909.005000Z",
+            "document_id": "e08e63d2-8646-4beb-8f46-7dc0d3958196",
+            "document_version": "2018-11-06T163909.005000Z",
+            "inputs": [
+                "104f3ba2-826c-445a-804a-82177383c34b.2018-11-06T165320.407000Z"
+            ],
+            "submission_date": "2018-11-06T16:23:41.119Z",
+            "update_date": "2018-11-06T16:39:09.005Z"
+        },
+        "schema_type": "biomaterial"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.2.5/enrichment_protocol",
+        "enrichment_method": {
+            "ontology": "EFO:0009108",
+            "ontology_label": "fluorescence-activated cell sorting",
+            "text": "fluorescence-activated cell sorting"
+        },
+        "markers": "CD45+ CD3e- B220- CD11b+ CD11c+",
+        "protocol_core": {
+            "protocol_id": "FACS4",
+            "protocol_name": "FACS sorting cells by surface markers"
+        },
+        "provenance": {
+            "document_fqid": "fb9b03eb-4a81-4f78-82d0-2eb4a208bdf5.2018-11-06T162657.668000Z",
+            "document_id": "fb9b03eb-4a81-4f78-82d0-2eb4a208bdf5",
+            "document_version": "2018-11-06T162657.668000Z",
+            "submission_date": "2018-11-06T16:26:47.299Z",
+            "update_date": "2018-11-06T16:26:57.668Z"
+        },
+        "schema_type": "protocol"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/process/6.0.2/process",
+        "process_core": {
+            "process_id": "process_id_32"
+        },
+        "provenance": {
+            "document_fqid": "104f3ba2-826c-445a-804a-82177383c34b.2018-11-06T165320.407000Z",
+            "document_id": "104f3ba2-826c-445a-804a-82177383c34b",
+            "document_version": "2018-11-06T165320.407000Z",
+            "inputs": [
+                "60d57643-3a55-4a8f-a1af-910a39837bce.2018-11-06T163727.073000Z"
+            ],
+            "protocols": [],
+            "submission_date": "2018-11-06T16:30:43.551Z",
+            "update_date": "2018-11-06T16:53:20.407Z"
+        },
+        "schema_type": "process"
+    },
+    {
+        "biomaterial_core": {
+            "biomaterial_id": "1135",
+            "biomaterial_name": "Mouse_day11_rep2",
+            "ncbi_taxon_id": [
+                10090
+            ]
+        },
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/10.1.2/donor_organism",
+        "diseases": [
+            {
+                "ontology": "MONDO:0005105",
+                "ontology_label": "melanoma (disease)",
+                "text": "subcutaneous melanoma"
+            }
+        ],
+        "genus_species": [
+            {
+                "ontology": "NCBITaxon:10090",
+                "ontology_label": "Mus musculus",
+                "text": "Mus musculus"
+            }
+        ],
+        "is_living": "no",
+        "mouse_specific": {
+            "strain": [
+                {
+                    "ontology": "EFO:0004472",
+                    "ontology_label": "C57BL/6",
+                    "text": "C57BL/6"
+                }
+            ]
+        },
+        "organism_age": "6-12",
+        "organism_age_unit": {
+            "ontology": "UO:0000034",
+            "ontology_label": "week",
+            "text": "week"
+        },
+        "provenance": {
+            "document_fqid": "60d57643-3a55-4a8f-a1af-910a39837bce.2018-11-06T163727.073000Z",
+            "document_id": "60d57643-3a55-4a8f-a1af-910a39837bce",
+            "document_version": "2018-11-06T163727.073000Z",
+            "inputs": [],
+            "submission_date": "2018-11-06T16:23:40.148Z",
+            "update_date": "2018-11-06T16:37:27.073Z"
+        },
+        "schema_type": "biomaterial",
+        "sex": "female"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/process/6.0.2/process",
+        "process_core": {
+            "process_id": "proc_21935_6#132"
+        },
+        "provenance": {
+            "document_fqid": "e930e5a0-04cf-48ed-bfc2-9546a33fca7f.2018-11-06T164656.354000Z",
+            "document_id": "e930e5a0-04cf-48ed-bfc2-9546a33fca7f",
+            "document_version": "2018-11-06T164656.354000Z",
+            "inputs": [
+                "de3c4fbb-89a1-4f52-9b92-2355977fb5fa.2018-11-06T164134.387000Z"
+            ],
+            "protocols": [
+                "a2d7bd71-df3e-4a67-a671-b965c061bb8b.2018-11-06T162658.929000Z",
+                "c2bd27da-d132-4833-a5f7-a7b19aabc6a0.2018-11-06T162658.116000Z"
+            ],
+            "submission_date": "2018-11-06T16:27:17.485Z",
+            "update_date": "2018-11-06T16:46:56.354Z"
+        },
+        "schema_type": "process"
+    },
+    {
+        "biomaterial_core": {
+            "biomaterial_id": "21935_6#132",
+            "ncbi_taxon_id": [
+                10090
+            ]
+        },
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/8.6.1/cell_suspension",
+        "genus_species": [
+            {
+                "ontology": "NCBITaxon:10090",
+                "ontology_label": "Mus musculus",
+                "text": "Mus musculus"
+            }
+        ],
+        "plate_based_sequencing": {
+            "plate_id": "559",
+            "well_id": "C06"
+        },
+        "provenance": {
+            "document_fqid": "de3c4fbb-89a1-4f52-9b92-2355977fb5fa.2018-11-06T164134.387000Z",
+            "document_id": "de3c4fbb-89a1-4f52-9b92-2355977fb5fa",
+            "document_version": "2018-11-06T164134.387000Z",
+            "inputs": [
+                "e9a12150-2d76-4036-a1b7-77eb0c43cd95.2018-11-06T165343.752000Z"
+            ],
+            "submission_date": "2018-11-06T16:23:59.032Z",
+            "update_date": "2018-11-06T16:41:34.387Z"
+        },
+        "schema_type": "biomaterial",
+        "selected_cell_type": [
+            {
+                "text": "CD11c+ DC"
+            }
+        ],
+        "total_estimated_cells": 1
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/file/6.5.2/sequence_file",
+        "file_core": {
+            "file_format": "fastq.gz",
+            "file_name": "21935_6#132_1.fastq.gz"
+        },
+        "lane_index": 6,
+        "provenance": {
+            "document_fqid": "c84913ab-7760-4550-bf07-2bd5a05dfec8.2018-11-06T173641.765000Z",
+            "document_id": "c84913ab-7760-4550-bf07-2bd5a05dfec8",
+            "document_version": "2018-11-06T173641.765000Z",
+            "inputs": [
+                "e930e5a0-04cf-48ed-bfc2-9546a33fca7f.2018-11-06T164656.354000Z"
+            ],
+            "submission_date": "2018-11-06T16:19:20.352Z",
+            "update_date": "2018-11-06T17:36:41.765Z"
+        },
+        "read_index": "read1",
+        "schema_type": "file"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/file/6.5.2/sequence_file",
+        "file_core": {
+            "file_format": "fastq.gz",
+            "file_name": "21935_6#132_2.fastq.gz"
+        },
+        "lane_index": 6,
+        "provenance": {
+            "document_fqid": "1c2353f3-4e8b-4ce9-92e3-bb616074ad30.2018-11-06T173656.420000Z",
+            "document_id": "1c2353f3-4e8b-4ce9-92e3-bb616074ad30",
+            "document_version": "2018-11-06T173656.420000Z",
+            "inputs": [
+                "e930e5a0-04cf-48ed-bfc2-9546a33fca7f.2018-11-06T164656.354000Z"
+            ],
+            "submission_date": "2018-11-06T16:19:20.368Z",
+            "update_date": "2018-11-06T17:36:56.420Z"
+        },
+        "read_index": "read2",
+        "schema_type": "file"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/process/6.0.2/process",
+        "process_core": {
+            "process_id": "process_id_819"
+        },
+        "provenance": {
+            "document_fqid": "e9a12150-2d76-4036-a1b7-77eb0c43cd95.2018-11-06T165343.752000Z",
+            "document_id": "e9a12150-2d76-4036-a1b7-77eb0c43cd95",
+            "document_version": "2018-11-06T165343.752000Z",
+            "inputs": [
+                "50fc8327-b9b1-404e-bc14-0c3da9debd8a.2018-11-06T163832.970000Z"
+            ],
+            "protocols": [
+                "32ba49cf-3950-4e3c-841a-181d47e3802e.2018-11-06T162657.632000Z",
+                "4ec49808-90c1-4b91-b07e-b54b83409598.2018-11-06T162657.580000Z"
+            ],
+            "submission_date": "2018-11-06T16:31:13.552Z",
+            "update_date": "2018-11-06T16:53:43.752Z"
+        },
+        "schema_type": "process"
+    },
+    {
+        "biomaterial_core": {
+            "biomaterial_id": "1129_LN",
+            "biomaterial_name": "Mouse_day8_LN_rep9",
+            "ncbi_taxon_id": [
+                10090
+            ]
+        },
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/6.3.3/specimen_from_organism",
+        "genus_species": [
+            {
+                "ontology": "NCBITaxon:10090",
+                "ontology_label": "Mus musculus",
+                "text": "Mus musculus"
+            }
+        ],
+        "organ": {
+            "ontology": "UBERON:0000029",
+            "ontology_label": "lymph node",
+            "text": "lymph node"
+        },
+        "provenance": {
+            "document_fqid": "50fc8327-b9b1-404e-bc14-0c3da9debd8a.2018-11-06T163832.970000Z",
+            "document_id": "50fc8327-b9b1-404e-bc14-0c3da9debd8a",
+            "document_version": "2018-11-06T163832.970000Z",
+            "inputs": [
+                "8d552863-6d78-4191-816f-d88b2b5b2eb8.2018-11-06T165320.357000Z"
+            ],
+            "submission_date": "2018-11-06T16:23:41.073Z",
+            "update_date": "2018-11-06T16:38:32.970Z"
+        },
+        "schema_type": "biomaterial"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.2.5/enrichment_protocol",
+        "enrichment_method": {
+            "ontology": "EFO:0009108",
+            "ontology_label": "fluorescence-activated cell sorting",
+            "text": "fluorescence-activated cell sorting"
+        },
+        "markers": "CD45+ CD3e- B220- CD11c+",
+        "protocol_core": {
+            "protocol_id": "FACS2",
+            "protocol_name": "FACS sorting cells by surface markers"
+        },
+        "provenance": {
+            "document_fqid": "4ec49808-90c1-4b91-b07e-b54b83409598.2018-11-06T162657.580000Z",
+            "document_id": "4ec49808-90c1-4b91-b07e-b54b83409598",
+            "document_version": "2018-11-06T162657.580000Z",
+            "submission_date": "2018-11-06T16:26:47.283Z",
+            "update_date": "2018-11-06T16:26:57.580Z"
+        },
+        "schema_type": "protocol"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/process/6.0.2/process",
+        "process_core": {
+            "process_id": "process_id_26"
+        },
+        "provenance": {
+            "document_fqid": "8d552863-6d78-4191-816f-d88b2b5b2eb8.2018-11-06T165320.357000Z",
+            "document_id": "8d552863-6d78-4191-816f-d88b2b5b2eb8",
+            "document_version": "2018-11-06T165320.357000Z",
+            "inputs": [
+                "57bdc173-4c02-4683-a272-5af78e295944.2018-11-06T163726.987000Z"
+            ],
+            "protocols": [],
+            "submission_date": "2018-11-06T16:30:43.477Z",
+            "update_date": "2018-11-06T16:53:20.357Z"
+        },
+        "schema_type": "process"
+    },
+    {
+        "biomaterial_core": {
+            "biomaterial_id": "1129",
+            "biomaterial_name": "Mouse_day8_rep9",
+            "ncbi_taxon_id": [
+                10090
+            ]
+        },
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/10.1.2/donor_organism",
+        "diseases": [
+            {
+                "ontology": "MONDO:0005105",
+                "ontology_label": "melanoma (disease)",
+                "text": "subcutaneous melanoma"
+            }
+        ],
+        "genus_species": [
+            {
+                "ontology": "NCBITaxon:10090",
+                "ontology_label": "Mus musculus",
+                "text": "Mus musculus"
+            }
+        ],
+        "is_living": "no",
+        "mouse_specific": {
+            "strain": [
+                {
+                    "ontology": "EFO:0004472",
+                    "ontology_label": "C57BL/6",
+                    "text": "C57BL/6"
+                }
+            ]
+        },
+        "organism_age": "6-12",
+        "organism_age_unit": {
+            "ontology": "UO:0000034",
+            "ontology_label": "week",
+            "text": "week"
+        },
+        "provenance": {
+            "document_fqid": "57bdc173-4c02-4683-a272-5af78e295944.2018-11-06T163726.987000Z",
+            "document_id": "57bdc173-4c02-4683-a272-5af78e295944",
+            "document_version": "2018-11-06T163726.987000Z",
+            "inputs": [],
+            "submission_date": "2018-11-06T16:23:40.126Z",
+            "update_date": "2018-11-06T16:37:26.987Z"
+        },
+        "schema_type": "biomaterial",
+        "sex": "female"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.1.5/supplementary_file",
+        "file_core": {
+            "file_format": "pdf",
+            "file_name": "TissueDissociationProtocol.pdf"
+        },
+        "file_description": "Extracting cells from lymph nodes",
+        "provenance": {
+            "document_fqid": "36f7da51-91a7-498e-a4d8-8d1c62a0d5e8.2018-11-06T162904.471000Z",
+            "document_id": "36f7da51-91a7-498e-a4d8-8d1c62a0d5e8",
+            "document_version": "2018-11-06T162904.471000Z",
+            "inputs": [],
+            "submission_date": "2018-11-06T16:18:53.299Z",
+            "update_date": "2018-11-06T16:29:04.471Z"
+        },
+        "schema_type": "file"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.1.5/supplementary_file",
+        "file_core": {
+            "file_format": "pdf",
+            "file_name": "SmartSeq2_RTPCR_protocol.pdf"
+        },
+        "file_description": "Make/amplify cDNA for each cell",
+        "provenance": {
+            "document_fqid": "d25ca3d2-2492-4d3e-86bf-350d73829d26.2018-11-06T162904.396000Z",
+            "document_id": "d25ca3d2-2492-4d3e-86bf-350d73829d26",
+            "document_version": "2018-11-06T162904.396000Z",
+            "inputs": [],
+            "submission_date": "2018-11-06T16:18:53.308Z",
+            "update_date": "2018-11-06T16:29:04.396Z"
+        },
+        "schema_type": "file"
+    },
+    {
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.1.5/supplementary_file",
+        "file_core": {
+            "file_format": "pdf",
+            "file_name": "SmartSeq2_sequencing_protocol.pdf"
+        },
+        "file_description": "Sequencing SmartSeq2 cells",
+        "provenance": {
+            "document_fqid": "dd5638fe-9028-46d3-8d28-d77b21018041.2018-11-06T162904.403000Z",
+            "document_id": "dd5638fe-9028-46d3-8d28-d77b21018041",
+            "document_version": "2018-11-06T162904.403000Z",
+            "inputs": [],
+            "submission_date": "2018-11-06T16:18:53.329Z",
+            "update_date": "2018-11-06T16:29:04.403Z"
+        },
+        "schema_type": "file"
+    }
+]

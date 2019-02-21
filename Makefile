@@ -11,4 +11,5 @@ clean:
 
 
 lint:
-	python3 -m flake8 bin/metadata-merge
+	python3 -m flake8 bin/metadata-merge bin/metadata-consume bin/mb_support.py
+

@@ -1,84 +1,33 @@
 #!/bin/env python3
 import argparse
 
-import sys
 import os
 import re
 import glob
 import json
 from collections import defaultdict
-
-class ObjDict(dict):
-    """Dict object where keys are field names"""
-
-    def __getattr__(self, name):
-        if name in self:
-            return self[name]
-        else:
-            raise AttributeError("No such attribute: " + name)
-
-    def __setattr__(self, name, value):
-        self[name] = value
-
-    def __delattr__(self, name):
-        if name in self:
-            del self[name]
-        else:
-            raise AttributeError("No such attribute: " + name)
-
+from md_support import ObjDict, Project, Process, node_factory
 
 def parse_args():
-    desc = "Convert metadata in a set of bundles to a TSV"
+    desc = """Merge a project's metadata into a deduplicated json array of entities.
+    Entry zero is always the project entity.
+    """
     parser = argparse.ArgumentParser(description=desc)
-    parser.add_argument("--dump", default=False, action="store_true",
-                        help="dump project data structure as JSON")
     parser.add_argument("project_dir",
                         help="project directory containing bundles, base name becomes project name")
     parser.add_argument("metadataJson",
-                        help="output combined meatdata")
+                        help="Output of combined metadata entities as an array")
     return parser.parse_args()
-
-class Node(object):
-    def __init__(self, entity, version):
-        self.version = version
-        self.entity = entity
-        self.inputs = set()
-        self.outputs = set()
-
-    @property
-    def uuid(self):
-        return self.entity.provenance.document_id
-
-class Process(Node):
-    def __init__(self, entity, version):
-        super().__init__(entity, version)
-        self.protocols = set()
-
-class Protocol(Node):
-    def __init__(self, entity, version):
-        super().__init__(entity, version)
-
-class Product(Node):
-    def __init__(self, entity, version):
-        super().__init__(entity, version)
-
-class Project(Node):
-    """Graph for entire project"""
-    def __init__(self, entity, version):
-        super().__init__(entity, version)
-        self.nodes_by_uuid = {}
-        self.processes_by_uuid = {}
-        self.protocols_by_uuid = {}
-        self.products_by_uuid = {}
 
 class Bundle(object):
     """A bundle as maps of the metadata and related entities in the bundle"""
     def __init__(self, bundle_dir):
         self.bundle_entity = self._load_entity(os.path.join(bundle_dir, "bundle.json"))
         self.links_entity = self._load_entity(os.path.join(bundle_dir, "links.json"))
+        self.files_by_uuid = {}
+        self._build_bundle_maps()
         self.md_entities_by_uuid = {}
         self.md_entities_by_type = defaultdict(list)
-        self.versions_by_uuid = self._build_version_table()
         self._load_metadata(bundle_dir)
 
     @property
@@ -89,6 +38,12 @@ class Bundle(object):
     def version(self):
         return self.bundle_entity.bundle.version
 
+    def get_file_info(self, uuid):
+        return self.files_by_uuid[uuid]
+
+    def get_uuid_version(self, uuid):
+        return self.get_file_info(uuid).version
+
     def get_project_entity(self):
         ents = self.md_entities_by_type["project"]
         if len(ents) != 1:
@@ -98,15 +53,12 @@ class Bundle(object):
     def get_entity(self, uuid):
         return self.md_entities_by_uuid[uuid]
 
-    def get_version(self, entity):
-        return self.versions_by_uuid[entity.provenance.document_id]
+    def get_entity_version(self, entity):
+        return self.get_uuid_version(entity.provenance.document_id)
 
-    def _build_version_table(self):
-        vers = {}
-        vers[self.uuid] = self.version
+    def _build_bundle_maps(self):
         for bfile in self.bundle_entity.bundle.files:
-            vers[bfile.uuid] = bfile.version
-        return vers
+            self.files_by_uuid[bfile.uuid] = bfile
 
     def _load_entity(self, jsonf):
         with open(jsonf) as fh:
@@ -127,59 +79,53 @@ class Bundle(object):
             if re.match("^.+_[0-9]+.json$", os.path.basename(md_jsonf)):
                 self._load_md_entity(md_jsonf)
 
-class ProjectBuilder(object):
+class ProjectLoaderFromBundles(object):
     """build Project object from all bundles"""
     def __init__(self, bundles):
         self.bundles = bundles
+        self.processed_uuids = set()
         self.project = None
 
     def _process_bundle_project(self, bundle):
         prod_ent = bundle.get_project_entity()
-        prod_ver = bundle.get_version(prod_ent)
+        prod_ver = bundle.get_entity_version(prod_ent)
         if self.project is not None:
             if prod_ent.provenance.document_id != self.project.uuid:
-                raise Exception("Project has multiple project UUIDs {} and {}; count bundles be mixed from multiple projects?"
+                raise Exception("Project has multiple project UUIDs {} and {}; could bundles from multiple projects be included?"
                                 .format(prod_ent.provenance.document_id, self.project.uuid))
             if prod_ver != self.project.version:
                 raise Exception("Project {} has multiple version {} and {}; not yet supported"
                                 .format(prod_ver, self.project.version))
         else:
             self.project = Project(prod_ent, prod_ver)
-            self.project.nodes_by_uuid[self.project.uuid] = self.project
+            self.project.add_node(self.project)
+            self.processed_uuids.add(self.project.uuid)
 
-    def _check_dup_version(self, uuid, ver, node_map):
-        node = node_map.get(uuid)
-        if ver != node.version:
+    def _check_dup_version(self, uuid, version):
+        node = self.project.nodes_by_uuid[uuid]
+        if version != node.version:
             raise Exception("{} entity {} exists with multiple version {} and {}; not yet supported"
-                            .format(node.entity.__class_.__name__, uuid, ver, node.version))
+                            .format(node.entity.schema_type, uuid, version, node.version))
 
-    def _add_node(self, bundle, uuid, node_map, node_cls):
+    def _add_node(self, bundle, uuid):
         "same steps for any kind of node"
-        ent = bundle.get_entity(uuid)
-        ver = bundle.get_version(ent)
-        if uuid in node_map:
-            self._check_dup_version(uuid, ver, node_map)
+        entity = bundle.get_entity(uuid)
+        version = bundle.get_entity_version(entity)
+        if uuid in self.project.nodes_by_uuid:
+            self._check_dup_version(uuid, version)
         else:
-            node_map[uuid] = node_cls(ent, ver)
-            self.project.nodes_by_uuid[uuid] = node_map[uuid]
-
-    def _add_process(self, bundle, uuid):
-        self._add_node(bundle, uuid, self.project.processes_by_uuid, Process)
-
-    def _add_protocol(self, bundle, uuid):
-        self._add_node(bundle, uuid, self.project.protocols_by_uuid, Protocol)
-
-    def _add_product(self, bundle, uuid):
-        self._add_node(bundle, uuid, self.project.products_by_uuid, Product)
+            node = node_factory(entity, version)
+            self.project.add_node(node)
+            self.processed_uuids.add(node.uuid)
 
     def _add_from_bundle_process(self, bundle, process_links):
-        self._add_process(bundle, process_links.process)
+        self._add_node(bundle, process_links.process)
         for in_uuid in process_links.inputs:
-            self._add_process(bundle, in_uuid)
+            self._add_node(bundle, in_uuid)
         for out_uuid in process_links.outputs:
-            self._add_product(bundle, out_uuid)
+            self._add_node(bundle, out_uuid)
         for prot in process_links.protocols:
-            self._add_protocol(bundle, prot.protocol_id)
+            self._add_node(bundle, prot.protocol_id)
 
     def _add_nodes_from_bundle(self, bundle):
         self._process_bundle_project(bundle)
@@ -212,6 +158,28 @@ class ProjectBuilder(object):
         for prot in process_links.protocols:
             process.protocols.add(self._get_node(prot.protocol_id))
 
+    def _is_supplementary_file(self, bundle, uuid):
+        bfile = bundle.get_file_info(uuid)
+        if (not bfile.indexed) or (bfile.name == "links.json"):
+            return False
+        else:
+            entity = bundle.get_entity(uuid)
+            return entity.describedBy.endswith("/supplementary_file")
+
+    def _add_supplementry_file(self, bundle, uuid):
+        node = self.project.nodes_by_uuid.get(uuid)
+        if node is None:
+            entity = bundle.get_entity(uuid)
+            node = node_factory(entity, bundle.get_entity_version(entity))
+            self.project.add_node(node)
+            self.processed_uuids.add(node.uuid)
+        self.project.add_supplementary_file(node)
+
+    def _add_supplementry_files(self, bundle):
+        for bundle_file in bundle.bundle_entity.bundle.files:
+            if self._is_supplementary_file(bundle, bundle_file.uuid):
+                self._add_supplementry_file(bundle, bundle_file.uuid)
+
     def _link_from_bundle(self, bundle):
         for process_links in bundle.links_entity.links:
             self._link_from_bundle_process(bundle, process_links)
@@ -219,25 +187,57 @@ class ProjectBuilder(object):
     def _link_from_bundles(self):
         for bundle in self.bundles:
             self._link_from_bundle(bundle)
+        self._add_supplementry_files(bundle)
+
+    def _add_version_provenance(self, node):
+        node.entity.provenance["document_version"] = node.version
+        node.entity.provenance["document_fqid"] = node.fqid
+
+    def _add_version_provenances(self):
+        """create the document_fqid and document_version fields"""
+        for node in self.project.nodes_by_uuid.values():
+            self._add_version_provenance(node)
+
+    def _add_dag_provenance(self, node):
+        node.entity.provenance["inputs"] = tuple(sorted([n.fqid for n in node.inputs]))
+        if isinstance(node, Process):
+            node.entity.provenance["protocols"] = tuple(sorted([n.fqid for n in node.protocols]))
+
+    def _add_dag_provenances(self):
+        """create the provenance inputs and protocols fields"""
+        for node in self.project.nodes_by_uuid.values():
+            if node.has_dag_provenance:
+                self._add_dag_provenance(node)
+
+    def _check_for_stray_entities(self):
+        """find entities not in directories, but not linked"""
+        all_uuids = set()
+        for b in self.bundles:
+            all_uuids |= set(b.md_entities_by_uuid.keys())
+        missed = all_uuids - self.processed_uuids
+        if len(missed) > 0:
+            raise Exception("Entity UUIDs in bundles are not linked in metadata graph {}", missed)
 
     def build(self):
         self._add_nodes_from_bundles()
         self._link_from_bundles()
+        self._add_version_provenances()
+        self._add_dag_provenances()
+        self._check_for_stray_entities()
+        return self.project
 
 def load_project_bundles(project_dir):
-    bundle_dirs = glob.glob(os.path.join(project_dir, "*-*-*-*-*"))
+    bundle_dirs = sorted(glob.glob(os.path.join(project_dir, "*-*-*-*-*")))
     if len(bundle_dirs) == 0:
         raise Exception("no bundles found in {}".format(project_dir))
     return [Bundle(bundle_dir) for bundle_dir in bundle_dirs]
 
 def main():
     opts = parse_args()
-    builder = ProjectBuilder(load_project_bundles(opts.project_dir))
-    project = builder.build()
-    if opts.dump:
-        json.dump(project, sys.stderr, indent=4, sort_keys=True,
-                  default=lambda x: x.__dict__)
-        print(file=sys.stderr)
+    loader = ProjectLoaderFromBundles(load_project_bundles(opts.project_dir))
+    project = loader.build()
+    with open(opts.metadataJson, "w") as fh:
+        project.write_to_json(fh)
 
 
 main()

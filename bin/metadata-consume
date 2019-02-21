@@ -1,0 +1,75 @@
+#!/bin/env python3
+import argparse
+
+import json
+from md_support import ObjDict, Project, Process, Protocol, Product, node_factory, fqid_to_uuid
+
+def parse_args():
+    desc = "Read generated project merged metadata for testing"
+    parser = argparse.ArgumentParser(description=desc)
+    parser.add_argument("inMetadataJson",
+                        help="input combined metadata")
+    parser.add_argument("outMetadataJson",
+                        help="recapitulated combined metadata JOSN")
+    return parser.parse_args()
+
+
+class ProjectLoader(object):
+    """load project from metadata.json"""
+    def __init__(self, metadata_jsonf):
+        self.project = Project()   # pre-created, as nodes are stored in the object
+        self._load_entities(metadata_jsonf)
+
+    def _load_entity(self, entity):
+        if entity.provenance.document_id in self.project.nodes_by_uuid:
+            raise Exception("duplicate entity found: {}".format(entity.provenance.document_id))
+        if entity.schema_type == "project":
+            self.project.entity = entity
+            self.project.version = entity.provenance.document_version
+            self.project.add_node(self.project)
+        else:
+            self.project.add_node(node_factory(entity, entity.provenance.document_version))
+
+    def _load_entities(self, metadata_jsonf):
+        with open(metadata_jsonf) as fh:
+            for entity in json.load(fh, object_hook=ObjDict):
+                self._load_entity(entity)
+
+    def _link_protocols(self, process):
+        for uuid in process.entity.provenance.protocols:
+            process.protocols.add(self.project.nodes_by_uuid[fqid_to_uuid(uuid)])
+
+    def _link_node(self, node):
+        for in_fqid in node.entity.provenance.inputs:
+            pnode = self.project.nodes_by_uuid[fqid_to_uuid(in_fqid)]
+            node.inputs.add(pnode)
+            pnode.outputs.add(node)
+        if isinstance(node, Process):
+            self._link_protocols(node)
+        elif isinstance(node, Product) and node.is_supplementary_file():
+            self.project.add_supplementary_file(node)
+
+    def _link_graph_ends(self):
+        for node in self.project.nodes_by_uuid.values():
+            if node.has_dag_provenance:
+                if len(node.inputs) == 0:
+                    self.project.inputs.add(node)
+                if len(node.outputs) == 0:
+                    self.project.outputs.add(node)
+
+    def build(self):
+        for node in self.project.nodes_by_uuid.values():
+            if not isinstance(node, (Project, Protocol)):
+                self._link_node(node)
+        self._link_graph_ends()
+        return self.project
+
+def main():
+    opts = parse_args()
+    loader = ProjectLoader(opts.inMetadataJson)
+    project = loader.build()
+    with open(opts.outMetadataJson, "w") as fh:
+        project.write_to_json(fh)
+
+
+main()

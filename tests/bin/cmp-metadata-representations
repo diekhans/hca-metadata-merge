@@ -1,0 +1,24 @@
+#!/bin/bash -e
+
+# dirty hack to compare metadata representations from input bundle jsons to output single json
+# this does it on a line-by-line comparison.
+
+if [ $# != 2 ] ; then
+    echo "wrong # args: projectdir combinedmetadata" > /dev/stderr
+fi
+projectdir=$1
+combinedmetadata=$2
+
+
+filtsort() {
+     sed -E -e 's/^ +//' -e 's/,$//' | sort -u
+}
+
+# must remove leading spaces before sort
+tmpdir=${TMPDIR-:/tmp}
+tmppre=$tmpdir/cmp.$$
+find ${projectdir} -name '*_*.json' | xargs cat | filtsort >${tmppre}.in.lines
+cat ${combinedmetadata} | filtsort > ${tmppre}.out.lines
+diff -s ${tmppre}.in.lines ${tmppre}.out.lines || true
+
+echo "WARNING: differences are expected, manually inspect the file" > /dev/stderr

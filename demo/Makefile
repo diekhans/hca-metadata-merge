@@ -14,7 +14,7 @@ demos: ${project_uuids:%=${outdir}/%.metadata.json}
 ${outdir}/%.metadata.json:
 	@mkdir -p $(dir $@)
 	${metadata-merge} ${projects_root}/$* $@.tmp
-	#mv -f $@.tmp $@
+	mv -f $@.tmp $@
 
 clean:
 	rm -rf ${outdir}

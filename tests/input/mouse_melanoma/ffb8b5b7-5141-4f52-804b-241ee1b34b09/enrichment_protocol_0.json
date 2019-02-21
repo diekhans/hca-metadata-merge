@@ -1,0 +1,19 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.2.5/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "FACS7",
+        "protocol_name": "FACS sorting cells by surface markers"
+    },
+    "enrichment_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108",
+        "ontology_label": "fluorescence-activated cell sorting"
+    },
+    "markers": "CD45+ IL7Ra+",
+    "provenance": {
+        "document_id": "2cd47ea5-74c1-401d-86d5-70f90255c9be",
+        "submission_date": "2018-11-06T16:26:47.322Z",
+        "update_date": "2018-11-06T16:26:57.790Z"
+    }
+}
