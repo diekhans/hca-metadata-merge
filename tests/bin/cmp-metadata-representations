@@ -21,4 +21,4 @@ find ${projectdir} -name '*_*.json' | xargs cat | filtsort >${tmppre}.in.lines
 cat ${combinedmetadata} | filtsort > ${tmppre}.out.lines
 diff -s ${tmppre}.in.lines ${tmppre}.out.lines || true
 
-echo "WARNING: differences are expected, manually inspect the file" > /dev/stderr
+echo "WARNING: differences are expected, manually inspect the file" >&2
