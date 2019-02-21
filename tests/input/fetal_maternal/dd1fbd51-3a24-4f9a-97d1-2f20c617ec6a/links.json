@@ -1,0 +1,70 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/system/1.1.4/links",
+    "schema_type": "link_bundle",
+    "schema_version": "1.1.4",
+    "links": [
+        {
+            "process": "60240145-50d0-4e77-a67a-6ed59aad5e40",
+            "inputs": [
+                "08aec4e3-3594-4bd7-aad0-dc870815c7fa"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "8a3ffc4f-b7c0-4077-b10b-eaf77895d06d",
+                "8f03bb48-b8db-4ded-b234-eb4adc55a6f3"
+            ],
+            "output_type": "file",
+            "protocols": [
+                {
+                    "protocol_type": "library_preparation_protocol",
+                    "protocol_id": "edda2708-1172-47f0-9c8b-b6771f463db1"
+                },
+                {
+                    "protocol_type": "sequencing_protocol",
+                    "protocol_id": "46f58d61-c784-47fb-9c75-7af37871810e"
+                }
+            ]
+        },
+        {
+            "process": "0d83c414-bed9-4dff-86d9-3d1b9a60244c",
+            "inputs": [
+                "6afc192d-5463-4706-be6a-cfbc0f7f0dc7"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "08aec4e3-3594-4bd7-aad0-dc870815c7fa"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "dissociation_protocol",
+                    "protocol_id": "7156de05-65a2-4122-84c1-491b87bbde58"
+                },
+                {
+                    "protocol_type": "enrichment_protocol",
+                    "protocol_id": "8bd79624-4e0d-4f1e-a505-edbc153c220e"
+                },
+                {
+                    "protocol_type": "enrichment_protocol",
+                    "protocol_id": "55dd1cfc-cc9c-4a03-aa43-2cb92b843253"
+                },
+                {
+                    "protocol_type": "enrichment_protocol",
+                    "protocol_id": "13af0f6a-09c7-46cf-bbae-965e065d5783"
+                }
+            ]
+        },
+        {
+            "process": "295bc57e-e2f3-4f30-9003-092af3253c09",
+            "inputs": [
+                "a879fffa-3b98-4204-ae5a-603180007ca0"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "6afc192d-5463-4706-be6a-cfbc0f7f0dc7"
+            ],
+            "output_type": "biomaterial",
+            "protocols": []
+        }
+    ]
+}

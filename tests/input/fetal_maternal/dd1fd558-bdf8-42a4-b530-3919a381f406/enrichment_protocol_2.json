@@ -1,0 +1,21 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.2.8/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "enrichment_protocol_4",
+        "protocol_name": "FACS sorting to enrich for myeloid cells for SS2",
+        "protocol_description": "FACS was used with gates CD45+CD14highHLA-Drhigh; CD45+HLA-DR+",
+        "publication_doi": "10.1038/s41586-018-0698-6"
+    },
+    "enrichment_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108",
+        "ontology_label": "fluorescence-activated cell sorting"
+    },
+    "markers": "CD45+ CD14high HLA-DRhigh HLA-DR+",
+    "provenance": {
+        "document_id": "13af0f6a-09c7-46cf-bbae-965e065d5783",
+        "submission_date": "2019-01-23T10:33:59.678Z",
+        "update_date": "2019-01-23T10:34:05.577Z"
+    }
+}

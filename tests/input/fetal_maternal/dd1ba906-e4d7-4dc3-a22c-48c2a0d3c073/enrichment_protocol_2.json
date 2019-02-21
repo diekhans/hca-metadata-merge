@@ -1,0 +1,21 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.2.8/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "enrichment_protocol_6",
+        "protocol_name": "FACS sorting to enrich for NK cells for SS2",
+        "protocol_description": "FACS was used with gates CD45+HLA-DR\u2212CD3\u2212CD56\u2212CD94\u2212 ; CD45+HLA-DR\u2212CD3\u2212CD56+CD94\u2212; autofluorescence; CD45+HLA-DR\u2212CD3\u2212CD56+CD94+CD9\u2212; CD45+HLA-DR\u2212CD3\u2212CD56+CD94+CD9+",
+        "publication_doi": "10.1038/s41586-018-0698-6"
+    },
+    "enrichment_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108",
+        "ontology_label": "fluorescence-activated cell sorting"
+    },
+    "markers": "CD45+ HLA-DR\u2212 CD3\u2212 CD56\u2212 CD94\u2212 CD56+ CD94\u2212 CD94+ CD9\u2212 CD9+",
+    "provenance": {
+        "document_id": "53edf71a-79dd-4c60-b074-9f87002770a3",
+        "submission_date": "2019-01-23T10:33:59.695Z",
+        "update_date": "2019-01-23T10:34:05.771Z"
+    }
+}

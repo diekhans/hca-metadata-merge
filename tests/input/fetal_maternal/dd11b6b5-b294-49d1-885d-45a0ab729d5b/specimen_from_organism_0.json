@@ -1,0 +1,39 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/biomaterial/6.3.8/specimen_from_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "blood_from_donor_D4",
+        "biomaterial_name": "Peripheral blood sample 1",
+        "biomaterial_description": "Blood from early pregnancy (6- 14 weeks gestation)",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606",
+            "ontology_label": "Homo sapiens"
+        }
+    ],
+    "organ": {
+        "text": "blood",
+        "ontology": "UBERON:0000178",
+        "ontology_label": "blood"
+    },
+    "diseases": [
+        {
+            "text": "normal",
+            "ontology": "PATO:0000461",
+            "ontology_label": "normal"
+        }
+    ],
+    "preservation_storage": {
+        "preservation_method": "fresh"
+    },
+    "provenance": {
+        "document_id": "e7049663-aa57-4001-8bb4-870e341b4f0b",
+        "submission_date": "2019-01-23T10:25:32.280Z",
+        "update_date": "2019-01-23T10:55:57.143Z"
+    }
+}

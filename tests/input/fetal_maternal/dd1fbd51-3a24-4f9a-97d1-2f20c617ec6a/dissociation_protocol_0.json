@@ -1,0 +1,20 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/5.0.7/dissociation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "dissociation_protocol_1",
+        "protocol_name": "Collagenase V tissue dissociation",
+        "protocol_description": "Decidual tissues were chopped using scalpels into approximately 0.2 mm3 cubes and enzymatically digested in 15ml 0.4mg/mL collagenase V (Sigma, C-9263) solution in RPMI 1640 medium (ThermoFisher Scientific, 21875-034)/10% FCS (Biosfera, FB-1001) at 37\u00b0C for 45 min.",
+        "publication_doi": "10.1038/s41586-018-0698-6"
+    },
+    "dissociation_method": {
+        "text": "enzymatic (collagenase V)",
+        "ontology": "EFO:0009128",
+        "ontology_label": "enzymatic dissociation"
+    },
+    "provenance": {
+        "document_id": "7156de05-65a2-4122-84c1-491b87bbde58",
+        "submission_date": "2019-01-23T10:33:59.637Z",
+        "update_date": "2019-01-23T10:34:05.716Z"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/biomaterial/6.3.8/specimen_from_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "decidua_from_donor_D2",
+        "biomaterial_name": "Decidua tissue 6",
+        "biomaterial_description": "Decidua tissue collected from termination of pregnancy at 6-14 weeks gestation",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606",
+            "ontology_label": "Homo sapiens"
+        }
+    ],
+    "organ": {
+        "text": "decidua",
+        "ontology": "UBERON:0002450",
+        "ontology_label": "decidua"
+    },
+    "diseases": [
+        {
+            "text": "normal",
+            "ontology": "PATO:0000461",
+            "ontology_label": "normal"
+        }
+    ],
+    "preservation_storage": {
+        "preservation_method": "fresh"
+    },
+    "provenance": {
+        "document_id": "7554ffed-c5d4-4a9f-b6f8-49c96aba65d8",
+        "submission_date": "2019-01-23T10:25:32.210Z",
+        "update_date": "2019-01-23T10:45:27.788Z"
+    }
+}

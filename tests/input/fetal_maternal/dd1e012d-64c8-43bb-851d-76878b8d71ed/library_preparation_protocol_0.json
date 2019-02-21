@@ -1,0 +1,32 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/sequencing/4.4.4/library_preparation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "library_preparation_protocol_1",
+        "protocol_name": "Preparation of mRNAs for single cell SmartSeq2 sequencing",
+        "protocol_description": "The SmartSeq2 protocol was performed on single-cells as described in 10.1038/nprot.2014.006, with some modifications.",
+        "publication_doi": "10.1038/nprot.2014.006"
+    },
+    "library_construction_approach": {
+        "text": "Smart-seq2",
+        "ontology": "EFO:0008931",
+        "ontology_label": "Smart-seq2"
+    },
+    "nucleic_acid_source": "single cell",
+    "end_bias": "full length",
+    "primer": "poly-dT",
+    "strand": "unstranded",
+    "input_nucleic_acid_molecule": {
+        "text": "polyA RNA",
+        "ontology": "OBI:0000869",
+        "ontology_label": "polyA RNA"
+    },
+    "library_construction_kit": {
+        "retail_name": "Nextera XT library preparation kit"
+    },
+    "provenance": {
+        "document_id": "edda2708-1172-47f0-9c8b-b6771f463db1",
+        "submission_date": "2019-01-23T10:33:59.845Z",
+        "update_date": "2019-01-23T10:34:05.563Z"
+    }
+}

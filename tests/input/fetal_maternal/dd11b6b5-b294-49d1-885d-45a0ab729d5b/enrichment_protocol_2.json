@@ -1,0 +1,21 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.2.8/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "enrichment_protocol_11",
+        "protocol_name": "FACS sorting to deplete  B cells",
+        "protocol_description": "FACS was used with CD19- and CD20-",
+        "publication_doi": "10.1038/s41586-018-0698-6"
+    },
+    "enrichment_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108",
+        "ontology_label": "fluorescence-activated cell sorting"
+    },
+    "markers": "CD19- CD20-",
+    "provenance": {
+        "document_id": "3d2707fa-83ad-472b-8282-7b6191f96bc2",
+        "submission_date": "2019-01-23T10:33:59.768Z",
+        "update_date": "2019-01-23T10:34:05.715Z"
+    }
+}

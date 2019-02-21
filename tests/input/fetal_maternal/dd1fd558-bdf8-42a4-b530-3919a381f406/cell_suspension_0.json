@@ -1,0 +1,37 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/biomaterial/8.6.6/cell_suspension",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "23728_7_77",
+        "biomaterial_name": "myeloid cell from decidua",
+        "biomaterial_description": "=",
+        "ncbi_taxon_id": [
+            9606
+        ],
+        "insdc_biomaterial": "ERS2334518",
+        "biosd_biomaterial": "SAMEA1014897"
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606",
+            "ontology_label": "Homo sapiens"
+        }
+    ],
+    "selected_cell_type": [
+        {
+            "text": "myeloid cell",
+            "ontology": "CL:0000763",
+            "ontology_label": "myeloid cell"
+        }
+    ],
+    "total_estimated_cells": 1,
+    "plate_based_sequencing": {
+        "plate_id": "not provided"
+    },
+    "provenance": {
+        "document_id": "23e023c8-d415-4ec5-a1e2-b60aa034c460",
+        "submission_date": "2019-01-23T10:26:29.795Z",
+        "update_date": "2019-01-23T10:58:56.943Z"
+    }
+}

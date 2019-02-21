@@ -1,0 +1,18 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/file/7.0.2/sequence_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "ERR2456093_2.fastq.gz",
+        "file_format": "fastq.gz"
+    },
+    "read_index": "read2",
+    "read_length": 75,
+    "insdc_run": [
+        "ERR2456093"
+    ],
+    "provenance": {
+        "document_id": "e58bf2fc-a066-4967-a62b-370b0a0bcbf2",
+        "submission_date": "2019-01-23T10:29:23.728Z",
+        "update_date": "2019-01-23T15:08:21.764Z"
+    }
+}

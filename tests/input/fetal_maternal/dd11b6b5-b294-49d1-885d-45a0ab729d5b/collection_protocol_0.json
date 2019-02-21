@@ -1,0 +1,20 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/8.2.10/collection_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "blood_draw_1",
+        "protocol_name": "blood draw",
+        "protocol_description": "blood draw",
+        "publication_doi": "10.1038/s41586-018-0698-6"
+    },
+    "collection_method": {
+        "text": "blood draw",
+        "ontology": "EFO:0009121",
+        "ontology_label": "blood draw"
+    },
+    "provenance": {
+        "document_id": "477b201f-67f0-4f97-86d5-de32a7afc267",
+        "submission_date": "2019-01-23T10:33:59.629Z",
+        "update_date": "2019-01-23T10:34:05.575Z"
+    }
+}

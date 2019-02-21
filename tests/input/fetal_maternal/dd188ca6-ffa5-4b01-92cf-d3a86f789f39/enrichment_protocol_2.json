@@ -1,0 +1,21 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.2.8/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "enrichment_protocol_7",
+        "protocol_name": "FACS sorting to enrich for CD45- cells for SS2",
+        "protocol_description": "FACS was used with gates CD45\u2212HLA-G+; CD45\u2212HLA-G\u2212",
+        "publication_doi": "10.1038/s41586-018-0698-6"
+    },
+    "enrichment_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108",
+        "ontology_label": "fluorescence-activated cell sorting"
+    },
+    "markers": "CD45\u2212 HLA-G+ HLA-G\u2212",
+    "provenance": {
+        "document_id": "73f7b41e-c585-467a-be18-988a7e7105b7",
+        "submission_date": "2019-01-23T10:33:59.704Z",
+        "update_date": "2019-01-23T10:34:05.821Z"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.2.8/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "enrichment_protocol_3",
+        "protocol_name": "Isolation (enrichment) of PBMCs from blood",
+        "protocol_description": "Blood samples were carefully layered onto a Ficoll-paque gradient and centrifuged at 2,000 rpm for 30 min without brakes. Peripheral blood mononuclear cells (PBMCs) from the interface between the plasma and the Ficoll\u2013 Paque gradient were collected and washed in ice-cold phosphate-buffered saline (PBS), followed by centrifugation at 2000r.p.m. for 5 min. The pellet was resuspended in 5ml of red blood cell lysis buffer (Invitrogen, 00-4300) for 10min.",
+        "publication_doi": "10.1038/s41586-018-0698-6"
+    },
+    "enrichment_method": {
+        "text": "Ficoll-paque gradient",
+        "ontology": "EFO:0009112",
+        "ontology_label": "density gradient centrifugation"
+    },
+    "provenance": {
+        "document_id": "dcfe8429-af02-491e-96e9-4ac0569cd5d1",
+        "submission_date": "2019-01-23T10:33:59.669Z",
+        "update_date": "2019-01-23T10:34:05.632Z"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/file/5.3.4/analysis_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "23e023c8-d415-4ec5-a1e2-b60aa034c460_rsem.genes.results",
+        "file_format": "results"
+    },
+    "provenance": {
+        "document_id": "b0742c08-3016-4a57-aa55-318ddc6b3e95",
+        "submission_date": "2019-02-01T15:09:29.973Z",
+        "update_date": "2019-02-01T15:15:31.796Z"
+    }
+}

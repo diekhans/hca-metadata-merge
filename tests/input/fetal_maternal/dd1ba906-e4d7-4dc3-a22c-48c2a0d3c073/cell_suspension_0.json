@@ -1,0 +1,37 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/biomaterial/8.6.6/cell_suspension",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "23728_5_363",
+        "biomaterial_name": "NK cell from decidua",
+        "biomaterial_description": "=",
+        "ncbi_taxon_id": [
+            9606
+        ],
+        "insdc_biomaterial": "ERS2328482",
+        "biosd_biomaterial": "SAMEA104727099"
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606",
+            "ontology_label": "Homo sapiens"
+        }
+    ],
+    "selected_cell_type": [
+        {
+            "text": "NK cell",
+            "ontology": "CL:0000623",
+            "ontology_label": "natural killer cell"
+        }
+    ],
+    "total_estimated_cells": 1,
+    "plate_based_sequencing": {
+        "plate_id": "not provided"
+    },
+    "provenance": {
+        "document_id": "c715246a-ecfa-4546-8dd4-173d08ee3448",
+        "submission_date": "2019-01-23T10:27:12.943Z",
+        "update_date": "2019-01-23T11:00:12.959Z"
+    }
+}

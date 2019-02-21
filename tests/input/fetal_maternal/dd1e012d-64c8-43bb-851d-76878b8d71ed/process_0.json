@@ -1,0 +1,15 @@
+{
+    "insdc_experiment": {
+        "insdc_experiment": "ERX2476369"
+    },
+    "process_core": {
+        "process_id": "24087_3_264"
+    },
+    "schema_type": "process",
+    "describedBy": "https://schema.humancellatlas.org/type/process/6.0.6/process",
+    "provenance": {
+        "document_id": "0ab90b62-9164-4557-83b8-6489edd37c2d",
+        "submission_date": "2019-01-23T10:38:40.628Z",
+        "update_date": "2019-01-23T11:16:09.648Z"
+    }
+}

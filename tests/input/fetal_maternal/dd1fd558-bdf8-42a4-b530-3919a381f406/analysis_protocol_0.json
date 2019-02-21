@@ -1,0 +1,16 @@
+{
+    "computational_method": "SmartSeq2SingleCell",
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/analysis/8.0.3/analysis_protocol",
+    "protocol_core": {
+        "protocol_id": "smartseq2_v2.2.0"
+    },
+    "protocol_type": {
+        "text": "analysis"
+    },
+    "schema_type": "protocol",
+    "provenance": {
+        "document_id": "46da6f95-cf36-447c-ae9b-bbab668bbf41",
+        "submission_date": "2019-02-01T15:09:25.074Z",
+        "update_date": "2019-02-01T15:09:28.516Z"
+    }
+}

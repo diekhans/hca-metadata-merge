@@ -1,0 +1,38 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/biomaterial/12.0.5/donor_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "D4",
+        "biomaterial_name": "Donor 4",
+        "biomaterial_description": "Donor 4, 6-14 weeks pregnant",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606",
+            "ontology_label": "Homo sapiens"
+        }
+    ],
+    "is_living": "yes",
+    "sex": "female",
+    "diseases": [
+        {
+            "text": "normal",
+            "ontology": "PATO:0000461",
+            "ontology_label": "normal"
+        }
+    ],
+    "development_stage": {
+        "text": "adult",
+        "ontology": "EFO:0001272",
+        "ontology_label": "adult"
+    },
+    "provenance": {
+        "document_id": "a879fffa-3b98-4204-ae5a-603180007ca0",
+        "submission_date": "2019-01-23T10:25:32.001Z",
+        "update_date": "2019-01-23T10:40:40.695Z"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/file/5.3.4/analysis_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "14065436-d4ec-4a32-9a8a-8bef38bdb556_qc.quality_distribution_metrics.txt",
+        "file_format": "txt"
+    },
+    "provenance": {
+        "document_id": "e4ecc3f9-f707-4ddd-8ede-715bf9c753e4",
+        "submission_date": "2019-02-01T14:42:12.778Z",
+        "update_date": "2019-02-01T14:47:04.166Z"
+    }
+}

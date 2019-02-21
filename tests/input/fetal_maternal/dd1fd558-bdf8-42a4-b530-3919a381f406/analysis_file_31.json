@@ -1,0 +1,13 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/file/5.3.4/analysis_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "23e023c8-d415-4ec5-a1e2-b60aa034c460.zarr!gene_id!.zarray",
+        "file_format": "unknown"
+    },
+    "provenance": {
+        "document_id": "fb5c97d3-232c-4edd-a4b2-a75c8a19d72c",
+        "submission_date": "2019-02-01T15:09:33.366Z",
+        "update_date": "2019-02-01T15:16:04.745Z"
+    }
+}

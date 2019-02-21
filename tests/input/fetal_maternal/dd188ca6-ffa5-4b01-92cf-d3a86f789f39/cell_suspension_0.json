@@ -1,0 +1,35 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/biomaterial/8.6.6/cell_suspension",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "24087_8_307",
+        "biomaterial_name": "CD45- from decidua",
+        "biomaterial_description": "=",
+        "ncbi_taxon_id": [
+            9606
+        ],
+        "insdc_biomaterial": "ERS2332610",
+        "biosd_biomaterial": "SAMEA1012660"
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606",
+            "ontology_label": "Homo sapiens"
+        }
+    ],
+    "selected_cell_type": [
+        {
+            "text": "CD45-"
+        }
+    ],
+    "total_estimated_cells": 1,
+    "plate_based_sequencing": {
+        "plate_id": "not provided"
+    },
+    "provenance": {
+        "document_id": "08c5e765-39fc-44f0-8e62-8074db2a84d0",
+        "submission_date": "2019-01-23T10:26:01.000Z",
+        "update_date": "2019-01-23T10:58:01.709Z"
+    }
+}
