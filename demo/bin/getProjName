@@ -1,0 +1,16 @@
+#!/bin/bash
+# extract the project name, in a file-name friendly format, from a JSON combined metadata file
+
+set -beEu -o pipefail
+if [ $# != 1 ] ; then
+    echo "wrong # args: $0 metadata.json" >&2
+    exit 1
+fi
+mdJson=$1
+
+name=$(jq -r '.[0].project_core.project_short_name' $mdJson | tr '[ ]' '_')
+if [ -z "$name" ] ; then
+    echo "wrong # args: $0 metadata.json" >&2
+    exit 1
+fi
+echo $name
