@@ -8,7 +8,7 @@ if [ $# != 1 ] ; then
 fi
 mdJson=$1
 
-name=$(jq -r '.[0].project_core.project_short_name' $mdJson | tr '[ ]' '_')
+name=$(jq -r '.[0].project_core.project_short_name' $mdJson | tr '[ /]' '_')
 if [ -z "$name" ] ; then
     echo "wrong # args: $0 metadata.json" >&2
     exit 1

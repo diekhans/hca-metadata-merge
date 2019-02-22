@@ -37,7 +37,6 @@ ${donedir}/%.byproject.done: ${outdir}/%.metadata.json
 	mkdir -p ${byprojectdir}/$$(bin/getProjName $<)
 	ln -f $< ${byprojectdir}/$$(bin/getProjName $<)/metadata.json
 
-
 ${sanity_dir}/%.sanity.diff: ${outdir}/%.metadata.json
 	@mkdir -p $(dir $@)
 	${cmp_metadata_representations} ${projects_root}/$* $< > $@.tmp
