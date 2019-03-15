@@ -80,8 +80,7 @@ class Project(Node):
     def write_to_json(self, fh):
         "write as an array of entities"
         entities = [n.entity for n in self.nodes_by_uuid.values()]
-        json.dump(entities, fh, indent=4, sort_keys=True,
-                  default=lambda x: x.__dict__)
+        json.dump(entities, fh, indent=4, sort_keys=True)
 
 
 def node_factory(entity, version):
